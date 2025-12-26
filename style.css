@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(34, 34, 34);
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.title span {
+  color: rgba(74, 165, 234);
+}
+.menus {
+  display: none;
+}
+.btn.rotate {
+  transform: rotate(-90deg);
+}
+.btn {
+  background-image: url(./img/bullet-point.png);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  border: none;
+  border-radius: 2px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.menus p {
+  font-size: 18px;
+  color: rgba(50, 78, 105);
+  line-height: 50px;
+}
+.menus p:hover {
+  color: #4a90e2;
+}
+.dMenus {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    display: none;
+  }
+  .dMenus {
+    display: flex;
+    gap: 30px;
+    align-content: space-around;
+  }
+  .dMenus p:hover {
+    color: #4a90e2;
+  }
+}
